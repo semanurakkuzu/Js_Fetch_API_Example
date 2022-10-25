@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="index.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-md-3">
+                        <form class="d-flex" role="search" onsubmit="searchFunction(event)">
+                            <input id="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-secondary" type="submit">Search</button>
+                        </form>
+                    </div>
+                    <div class="col-md-3">
+                        <select class="form-select" aria-label="Default select example" onchange="selectFunction(this)">
+                            <option selected>Open this select menu</option>
+                            <option value="1">A to Z</option>
+                            <option value="2">Z to A</option>
+                            <option value="3">Expensive to cheap</option>
+                            <option value="4">Cheap to Expensive</option>
+                        </select>
+                    </div>
+                </div>
+           
+        
+        <div id="gameList" class="row mt-5">
+
+        </div>
+    </div>
+</body>
+
+</html>
